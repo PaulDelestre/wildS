@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+{% block title %}Catégorie #{{ category.id }}{% endblock %}
+
+{% block body %}
+
+<h1 class="mt-0">{{ category.name }}</h1>
+<h2>3 dernières séries associées :</h2>
+<div class="container ml-2"></div> 
+        <div class="row">
+    {% for program in programs %}
+            <div class="card" style="width: 18rem;">
+                <img src="{{program.poster}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ loop.index }} / {{ program.title }}</h5>
+                    <p class="card-text">Catégorie : {{ program.category.name }}</p>
+                    <p class="card-text">{{ program.summary }}</p>
+                    <a href="{{ path("program_show", { id: program.id }) }}" class="btn btn-primary">Voir la fiche</a>
+                </div>
+            </div>
+    {% else %}
+    Aucune série trouvée. 
+            {% endfor %}
+        </div>
+</div>
+
+<a href="{{ path('category_index') }}">
+    Retour à la liste des categories
+</a>
+
+{% endblock %} 

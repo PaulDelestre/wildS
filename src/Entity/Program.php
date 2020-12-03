@@ -20,7 +20,7 @@ class Program
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $tilte;
+    private $title;
 
     /**
      * @ORM\Column(type="text")
