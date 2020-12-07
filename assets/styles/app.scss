@@ -1,12 +1,13 @@
 $theme-colors: (
-  "primary": #053a17,
-  "danger": #4036ff
-);
-@import "~bootstrap/scss/bootstrap";    
-body {
-    background-color: lightgray;
+   "primary": #2fd868,
+   "primary": #ee1010,
+   "danger": #ff4136
+ );
+ @import "~bootstrap/scss/bootstrap";    
+ body {
+     background-color: lightgray;
+ }
+ .img{
+     width: 100px;
+     width: 100%;
 }
-.img{
-    width: 100px;
-}
-
