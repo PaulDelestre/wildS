@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    <header>{% include '_navbar.html.twig' %}</header>
+    <header>{% include '_navbar.html.twig' %}        
+    </header>
     {% block body %}{% endblock %}
-    <img src="{{ asset('build/netflix-logo.png') }}" alt="" class="img" />
     {% block javascripts %}
     {{ encore_entry_script_tags('app') }}
     {% endblock %}

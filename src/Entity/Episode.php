@@ -1,9 +1,9 @@
 <?php
 
- namespace App\Entity;
+namespace App\Entity;
 
- use App\Repository\EpisodeRepository;
- use Doctrine\ORM\Mapping as ORM;
+use App\Repository\EpisodeRepository;
+use Doctrine\ORM\Mapping as ORM;
 
 /**
   * @ORM\Entity(repositoryClass=EpisodeRepository::class)
